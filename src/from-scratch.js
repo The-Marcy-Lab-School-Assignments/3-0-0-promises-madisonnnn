@@ -1,18 +1,14 @@
 /** FEEDBACK: In the future, ensure to clean up your code by removing commented out code but great job getting all test cases to pass! */
 const resolvedWrapper = (val) => {
   const promise = new Promise((resolve,rejected) => {
-    // setTimeout(() => {
       resolve(val)
-    // }, 500);
   })
   return promise 
 };
 
 const rejectedWrapper = (val) => {
   const promise = new Promise((resolve,rejected) => {
-    //setTimeout(() => {
       rejected(new Error(val))
-    //}, 500);
   })
   return promise 
 };
